@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            /* overflow: scroll; */
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        /* #box-1{
+            overflow: hidden;
+            overflow: scroll;
+            overflow-x: hidden;
+            
+        } */
+        .ellipsis{
+            border: 1px solid red;
+            width: 300px;
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ullam!" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ullam!</p> 
+    </header>
+    <section>
+       <div id="box-1" class="box">
+        <h3>My Text Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+       </div>
+       <div class="box">
+        <h3>My Text Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+       </div>
+       <div class="box">
+        <h3>My Text Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quis vero facere eaque molestias? Adipisci, harum corrupti beatae eius quas accusamus aliquam asperiores cupiditate? Deleniti magnam iusto ipsum tempora amet?</p>
+        
+       </div>
+    </section>
+</body>
+</html>
